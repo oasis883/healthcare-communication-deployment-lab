@@ -1,29 +1,26 @@
 # Healthcare Communication Deployment Lab
 
-A one-day Streamlit project demonstrating:
+A Streamlit-based simulation that demonstrates key workflows involved in deploying and validating a healthcare clinical communication platform. The application provides a hands-on environment for exploring patient admission, HL7 messaging, nurse-call workflows, wireless network validation, and deployment readiness assessments.
 
-- HL7 ADT message generation
-- patient admission workflow
-- nurse-call alert simulation
-- wireless signal assessment
-- go-live checks
-- optional Claude API implementation review
+## Features
 
-## Run
+- Generate synthetic HL7 ADT (A01) admission messages
+- Simulate patient admission and location assignment
+- Trigger normal, urgent, and emergency nurse-call alerts
+- Assess simulated Wi-Fi signal strength for clinical communication reliability
+- Perform deployment and go-live validation checks
+- Generate an AI-assisted technical deployment review using the Anthropic Claude API
+- Record an event log of simulated deployment activities
 
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-streamlit run app.py
-```
+## Technologies
 
-## Claude API
+- Python
+- Streamlit
+- Anthropic Claude API
+- HL7 Messaging (Simulation)
+- Python Dotenv
 
-Set your API key before starting Streamlit:
 
-```powershell
-$env:ANTHROPIC_API_KEY="your-key-here"
-```
+## Disclaimer
 
-Use fictional data only. This is a learning simulation, not a clinical system.
+This application is intended for learning and demonstration purposes only. It uses fictional patient information and simulated healthcare workflows. It is not connected to any real Electronic Health Record (EHR), clinical communication platform, or hospital environment.
